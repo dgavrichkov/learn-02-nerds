@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Nerds</title>
+	<title>Магазин готовых шаблонов</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -79,7 +79,24 @@
 		<section class="catalog__store">
 			<h2 class="common--hidden">Шаблоны</h2>
 			<div class="catalog__sorting sorting">
-				<h3 class="sorting__title"></h3>
+				<h3 class="sorting__title">Сортировать: </h3>
+				<ul class="sorting__list">
+					<li class="sorting__item"><a class="sorting__link sorting__link--current" href="#">По цене</a></li>
+					<li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+					<li class="sorting__item"><a class="sorting__link" href="#">По названию</a></li>
+				</ul>
+				<ul class="sorting__orderby orderby">
+					<li class="orderby__item">
+						<a class="orderby__icon orderby--descending" href="#">
+							<span class="common--hidden">По убыванию</span>
+						</a>
+					</li>
+					<li class="orderby__item">
+						<a class="orderby__icon orderby--ascending" href="#">
+							<span class="common--hidden">По возрастанию</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<ul class="catalog__list">
 				
