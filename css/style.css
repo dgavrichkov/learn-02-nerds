@@ -1,13 +1,13 @@
 @font-face{
-	font-family: 'PT Sans Bold';
+	font-family: 'RobotoRegular';
 	src: url('../fonts/roboto.woff2') format('woff2'), url('../fonts/roboto.woff') format('woff');
 }
 @font-face{
-	font-family: 'PT Sans Bold';
+	font-family: 'RobotoBold';
 	src: url('../fonts/robotobold.woff2') format('woff2'), url('../fonts/robotobold.woff') format('woff');
 }
 @font-face{
-	font-family: 'PT Sans';
+	font-family: 'RobotoMedium';
 	src: url('../fonts/robotomedium.woff2') format('woff2'), url('../fonts/robotomedium.woff') format('woff');
 }
 
@@ -20,4 +20,110 @@
 /* Grey  - #cccccc */
 /* darke Grey - #a6a6a6 */
 /* white, black */
+/* pale text - #283136 */
+/* faint text -  #666666 */
 /**********************************************************/
+
+/*стиль для доступного скрытия*/
+.common--hidden:not(:focus):not(:active),
+input[type="checkbox"].g--hidden,
+input[type="radio"].g--hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+/* BUTTONS */
+.button{
+	color: white;
+	font-family: 'RobotoMedium', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #a6a6a6;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*************/
+.navigation{
+	/*свойства текста*/
+	font-family: 'RobotoMedium', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: black;
+}
+
+.about-us{
+
+}
+.about-us__title{
+	font-family: 'RobotoMedium', Arial, sans-serif;
+	font-size: 45px;
+	line-height: 45px;
+	color: black;
+}
+.about-us__text{
+	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+}
+.about-us__text--accent{
+	font-family: 'RobotoBold', Arial, sans-serif;
+	text-transform: uppercase;
+	color: black;
+}
+
+/* STATS */
+.stats__title{
+	font-family: 'RobotoBold', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+.stats__percent{
+	font-family: 'RobotoBold', Arial, sans-serif;
+	font-size: 45px;
+	line-height: 45px;
+	color: black;
+}
+.stats__percent--sup{
+	font-size: 26px;
+}
+.stats__text{
+	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #283136;
+}
+
+/* ADDRESS CARD*/
+.address-card__title{
+	font-family: 'RobotoBold', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+}
+.address-card__text{
+	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/* FOOTER */
+.footer__title{
+	font-family: 'RobotoBold', Arial, sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+}
+.footer__text{
+	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+}
