@@ -1,13 +1,13 @@
 @font-face{
-	font-family: 'RobotoRegular';
+	font-family: 'Roboto Regular';
 	src: url('../fonts/roboto.woff2') format('woff2'), url('../fonts/roboto.woff') format('woff');
 }
 @font-face{
-	font-family: 'RobotoBold';
+	font-family: 'Roboto Bold';
 	src: url('../fonts/robotobold.woff2') format('woff2'), url('../fonts/robotobold.woff') format('woff');
 }
 @font-face{
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto Medium';
 	src: url('../fonts/robotomedium.woff2') format('woff2'), url('../fonts/robotomedium.woff') format('woff');
 }
 
@@ -42,54 +42,116 @@ input[type="radio"].g--hidden{
 /* BUTTONS */
 .button{
 	color: white;
-	font-family: 'RobotoMedium', Arial, sans-serif;
+	font-family: 'Roboto Medium', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 16px;
 	background-color: #a6a6a6;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
+.button--tomat{
+	background-color: #fb565a;
+}
+.button--salad{
+	background-color: #00ca74;
+}
+.button--gold{
+	background-color: #efc849;
+}
 /*************/
+.page{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	margin: 0;
+	padding: 0;	
+	background-color: #eeeeee;
+}
 .navigation{
 	/*свойства текста*/
-	font-family: 'RobotoMedium', Arial, sans-serif;
+	font-family: 'Roboto Medium', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
 	color: black;
 }
+.cart{
+	font-family: 'Roboto Medium', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: black;
+}
+.slider{
+	background-color: #eeeeee;
 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.slide__title{
+	font-family: 'Roboto Medium', Arial, sans-serif;
+	font-size: 55px;
+	line-height: 55px;
+	margin: 0;
+	padding: 0;
+}
+.slide__description{
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* SERVICES */
+.services__list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.service__title{
+	font-family: 'Roboto Bold', Arial, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	color: black;
+	text-transform: uppercase;
+}
+.service__description{
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+/******************/
 .about-us{
 
 }
 .about-us__title{
-	font-family: 'RobotoMedium', Arial, sans-serif;
+	font-family: 'Roboto Medium', Arial, sans-serif;
 	font-size: 45px;
 	line-height: 45px;
 	color: black;
 }
 .about-us__text{
-	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
 }
 .about-us__text--accent{
-	font-family: 'RobotoBold', Arial, sans-serif;
+	font-family: 'Roboto Bold', Arial, sans-serif;
 	text-transform: uppercase;
 	color: black;
 }
 
 /* STATS */
 .stats__title{
-	font-family: 'RobotoBold', Arial, sans-serif;
+	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
 }
 .stats__percent{
-	font-family: 'RobotoBold', Arial, sans-serif;
+	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 45px;
 	line-height: 45px;
 	color: black;
@@ -98,7 +160,7 @@ input[type="radio"].g--hidden{
 	font-size: 26px;
 }
 .stats__text{
-	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #283136;
@@ -106,24 +168,123 @@ input[type="radio"].g--hidden{
 
 /* ADDRESS CARD*/
 .address-card__title{
-	font-family: 'RobotoBold', Arial, sans-serif;
+	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 }
 .address-card__text{
-	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 }
 
 /* FOOTER */
 .footer__title{
-	font-family: 'RobotoBold', Arial, sans-serif;
+	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 36px;
 	line-height: 36px;
 }
 .footer__text{
-	font-family: 'RobotoRegular', Arial, sans-serif;
+	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
+}
+
+/*CATALOG*/
+.catalog__head{
+	font-family: 'Roboto Medium', Arial, sans-serif;
+	font-size: 55px;
+	line-height: 55px;
+	color: black;
+
+	background-color: #eeeeee;
+}
+
+.filter__title, .sorting__title{
+	font-family: 'Roboto Bold', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	color: black;
+}
+.options{
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	color: #283136;
+}
+.filter__submit{
+	border: none;
+	color: black;
+	background-color: #eeeeee;
+}
+
+.sorting__item{
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.302);
+	
+}
+.sorting__item--current{
+	color: black;
+}
+.sorting__link{
+	text-decoration: none;
+	color: inherit;
+}
+.orderby__item{
+	fill: #a6a6a6;
+}
+.orderby__item--current{
+	fill: black;
+}
+
+
+.store-card__title{
+	font-family: 'Roboto Bold', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	color: black;
+	text-transform: uppercase;
+}
+.store-card__description{
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+.pagination{
+	font-family: 'Roboto Medium', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	color: black;
+	text-transform: uppercase;
+}
+.pagination__item--link{
+	text-decoration: none;
+	color: inherit;
+}
+/* Write-us */
+.write-us{
+
+}
+.write-us__title{
+	font-family: 'Roboto Medium', Arial, sans-serif;
+	font-size: 45px;
+	line-height: 45px;
+	color: black;
+}
+.write-us__label{
+	font-family: 'Roboto Bold', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+}
+.write-us__field{
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+.write-us__button{
+	border: none;
 }

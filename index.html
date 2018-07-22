@@ -5,7 +5,7 @@
 	<title>Nerds</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page">
 	<header class="header">
 		<h1 class="common--hidden">Веб-студия "Нёрдс"</h1>
 		<div class="logo header__logo">
@@ -30,21 +30,21 @@
 				<div class="slide__content">
 					<h3 class="slide__title">Долго, дорого,<br>скрупулезно.</h3>
 					<p class="slide__description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-					<a href="#" class="slide__more button">Узнать больше</a>
+					<a href="#" class="slide__more button button--tomat">Узнать больше</a>
 				</div>
 			</li>
 			<li class="slider__slide">
 				<div class="slide__content">
 					<h3 class="slide__title">Любим математику<br>как никто другой</h3>
 					<p class="slide__description">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-					<a href="#" class="slide__more button">Узнать больше</a>
+					<a href="#" class="slide__more button button--tomat">Узнать больше</a>
 				</div>
 			</li>
 			<li class="slider__slide">
 				<div class="slide__content">
 					<h3 class="slide__title">Только ночь,<br>только хардкор</h3>
 					<p class="slide__description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-					<a href="#" class="slide__more button">Узнать больше</a>
+					<a href="#" class="slide__more button button--tomat">Узнать больше</a>
 				</div>
 			</li>
 		</ul>
@@ -170,18 +170,17 @@
 		</div>
 	</footer>
 	<section class="write-us modal">
-		<h2 class="write-us__title">Напишите нам</h2>
-		<form class="write-us__form" action="post">
-			<label for="name">Ваше имя: </label>
-			<input id="name" type="text" placeholder="Имя Фамилия">
-			<label for="email">Ваш e-mail</label>
-			<input id="email" type="text" placeholder="email@example.com">
-			<label for="text">Текст письма</label>
-			<input id="text" type="text" placeholder="В свободной форме">
-			<input class="button button--tomat" type="submit" value="Отправить">
-		</form>
-	</section>
-
+			<h2 class="write-us__title">Напишите нам</h2>
+			<form class="write-us__form" action="post">
+				<label class="write-us__label" for="name">Ваше имя: </label>
+				<input class="write-us__field" id="name" type="text" placeholder="Имя Фамилия">
+				<label class="write-us__label" for="email">Ваш e-mail</label>
+				<input class="write-us__field" id="email" type="text" placeholder="email@example.com">
+				<label class="write-us__label" for="text">Текст письма</label>
+				<input class="write-us__field" id="text" type="text" placeholder="В свободной форме">
+				<input class="write-us__button button button--tomat" type="submit" value="Отправить">
+			</form>
+		</section>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
