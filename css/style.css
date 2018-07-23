@@ -20,8 +20,12 @@
 /* Grey  - #cccccc */
 /* darke Grey - #a6a6a6 */
 /* white, black */
-/* pale text - #283136 */
-/* faint text -  #666666 */
+/* hover tomata - #e74246  */
+/* active tomata - #d7373b */
+/* hover salada - #00bc6c */
+/* active salada - #00aa62 */
+/* hover golda - #eab534 */
+/* active golda - #e5a722 */
 /**********************************************************/
 
 /*стиль для доступного скрытия*/
@@ -49,14 +53,35 @@ input[type="radio"].g--hidden{
 	text-decoration: none;
 	text-transform: uppercase;
 }
+.button:active{
+	color: rgba(255, 255, 255, 0.3); /*прозрачно-белый*/;
+}
 .button--tomat{
 	background-color: #fb565a;
+}
+.button--tomat:hover{
+	background-color: #e74246;
+}
+.button--tomat:active{
+	background-color: #d7373b;
 }
 .button--salad{
 	background-color: #00ca74;
 }
+.button--salad:hover{
+	background-color: #00bc6c;
+}
+.button--salad:active{
+	background-color: #00aa62;
+}
 .button--gold{
 	background-color: #efc849;
+}
+.button--gold:hover{
+	background-color: #eab534;
+}
+.button--gold:active{
+	background-color: #e5a722;
 }
 /*************/
 .page{
