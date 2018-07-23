@@ -12,21 +12,6 @@
 }
 
 /**********************************************************/
-/*  ЦВЕТА */
-/* Tomat - #fb565a */
-/* Salad - #00ca74 */
-/* Gold  - #efc849 */
-/* Sky   - #009de0 */
-/* Grey  - #cccccc */
-/* darke Grey - #a6a6a6 */
-/* white, black */
-/* hover tomata - #e74246  */
-/* active tomata - #d7373b */
-/* hover salada - #00bc6c */
-/* active salada - #00aa62 */
-/* hover golda - #eab534 */
-/* active golda - #e5a722 */
-/**********************************************************/
 
 /*стиль для доступного скрытия*/
 .common--hidden:not(:focus):not(:active),
@@ -87,6 +72,15 @@ input[type="radio"].g--hidden{
 .page{
 	margin: 0;
 	padding: 0;
+}
+/* Wrapper - это служебный блок для обеспечения центровки секций документа */
+.wrapper{
+	width: 100%;
+}
+.wrapper__container{
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 .header{
 	margin: 0;
@@ -245,6 +239,11 @@ input[type="radio"].g--hidden{
 .companies__link:active{
 	opacity: 0.1;
 }
+/*   */
+.location__map{
+	max-width: 1400px;
+	margin: 0 auto;
+}
 /* ADDRESS CARD*/
 .address-card__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
@@ -295,6 +294,9 @@ input[type="radio"].g--hidden{
 	color: black;
 
 	background-color: #eeeeee;
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
 
 .filter__title, .sorting__title{

@@ -6,150 +6,154 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-	<header class="header">
-		<div class="logo header__logo">
-			<a class="logo__link" href="index.html"><img class="logo__img" src="img/nerds-logo.svg" alt="Нёрдс"></a>	
-		</div>
-		<nav class="navigation header__navigation">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a class="navigation__link" href="#">Студия</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#">Клиенты</a></li>
-				<li class="navigation__item navigation__item--current"><a class="navigation__link">Магазин</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-			</ul>
-		</nav>
-		<div class="cart header__cart">
-			<a class="cart__link" href="#">Корзина</a>
+	<header class="header wrapper">
+		<div class="wrapper__container">
+			<div class="logo header__logo">
+				<a class="logo__link" href="index.html"><img class="logo__img" src="img/nerds-logo.svg" alt="Нёрдс"></a>	
+			</div>
+			<nav class="navigation header__navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item"><a class="navigation__link" href="#">Студия</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Клиенты</a></li>
+					<li class="navigation__item navigation__item--current"><a class="navigation__link">Магазин</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="cart header__cart">
+				<a class="cart__link" href="#">Корзина</a>
+			</div>
 		</div>
 	</header>
 
-	<main class="catalog">
+	<main class="catalog wrapper">
 		<h1 class="catalog__head">Магазин готовых шаблонов</h1>
-		<aside class="catalog__filter filter">
-			<form action="post">
-				<div class="filter__price">
-					<h3 class="filter__title">Стоимость:</h3>
-				</div>
-				<div class="filter__grid">
-					<h3 class="filter__title">Сетка:</h3>
-					<ul class="options">
-						<li class="options__item">
-							<input id="grid-adaptive" name="grid" type="radio" value="adaptive" checked>
-							<label for="grid-adaptive">Адаптивная</label>
+		<div class="wrapper__container">
+			<aside class="catalog__filter filter">
+				<form action="post">
+					<div class="filter__price">
+						<h3 class="filter__title">Стоимость:</h3>
+					</div>
+					<div class="filter__grid">
+						<h3 class="filter__title">Сетка:</h3>
+						<ul class="options">
+							<li class="options__item">
+								<input id="grid-adaptive" name="grid" type="radio" value="adaptive" checked>
+								<label for="grid-adaptive">Адаптивная</label>
+							</li>
+							<li class="options__item">
+								<input id="grid-fixed" name="grid" type="radio" value="fixed">
+								<label for="grid-fixed">Фиксированная</label>
+							</li>
+							<li class="options__item">
+								<input id="grid-stretch" name="grid" type="radio" value="stretch">
+								<label for="grid-stretch">Резиновая</label>
+							</li>
+						</ul>
+					</div>
+					<div class="filter__features">
+						<h3 class="filter__title">Особенности:</h3>
+						<ul class="options">
+							<li class="options__item">
+								<input id="feature-slider" type="checkbox" value="slider" checked>
+								<label for="feature-slider">Слайдер</label>
+							</li>
+							<li class="options__item">
+								<input id="feature-advantages" type="checkbox" value="advantages">
+								<label for="feature-advantages">Блок преимуществ</label>
+							</li>
+							<li class="options__item">
+								<input id="feature-news" type="checkbox" value="news" checked>
+								<label for="feature-news">Новости</label>
+							</li>
+							<li class="options__item">
+								<input id="feature-gallery" type="checkbox" value="gallery" >
+								<label for="feature-gallery">Галерея</label>
+							</li>
+							<li class="options__item">
+								<input id="feature-cart" type="checkbox" value="cart">
+								<label for="feature-cart">Корзина</label>
+							</li>
+						</ul>
+					</div>
+					<input class="filter__submit button button--grey" type="submit" value="Показать">
+				</form>
+			</aside>
+			<section class="catalog__store store">
+				<h2 class="common--hidden">Шаблоны</h2>
+				<div class="store__sorting sorting">
+					<h3 class="sorting__title">Сортировать: </h3>
+					<ul class="sorting__list">
+						<li class="sorting__item sorting__item--current"><a>По цене</a></li>
+						<li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+						<li class="sorting__item"><a class="sorting__link" href="#">По названию</a></li>
+					</ul>
+					<ul class="sorting__orderby orderby">
+						<li class="orderby__item orderby__item--current">
+							<a>
+								<span class="common--hidden">По убыванию</span>
+								<svg class="orderby__icon orderby__icon--descending" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+							</a>
 						</li>
-						<li class="options__item">
-							<input id="grid-fixed" name="grid" type="radio" value="fixed">
-							<label for="grid-fixed">Фиксированная</label>
-						</li>
-						<li class="options__item">
-							<input id="grid-stretch" name="grid" type="radio" value="stretch">
-							<label for="grid-stretch">Резиновая</label>
+						<li class="orderby__item">
+							<a class="orderby__link" href="#">
+								<span class="common--hidden">По возрастанию</span>
+								<svg class="orderby__icon orderby__icon--ascending" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="filter__features">
-					<h3 class="filter__title">Особенности:</h3>
-					<ul class="options">
-						<li class="options__item">
-							<input id="feature-slider" type="checkbox" value="slider" checked>
-							<label for="feature-slider">Слайдер</label>
-						</li>
-						<li class="options__item">
-							<input id="feature-advantages" type="checkbox" value="advantages">
-							<label for="feature-advantages">Блок преимуществ</label>
-						</li>
-						<li class="options__item">
-							<input id="feature-news" type="checkbox" value="news" checked>
-							<label for="feature-news">Новости</label>
-						</li>
-						<li class="options__item">
-							<input id="feature-gallery" type="checkbox" value="gallery" >
-							<label for="feature-gallery">Галерея</label>
-						</li>
-						<li class="options__item">
-							<input id="feature-cart" type="checkbox" value="cart">
-							<label for="feature-cart">Корзина</label>
-						</li>
+				<ul class="store__list">
+					<li class="store__item store-card">
+						<img class="store-card__picture" src="img/img-sedona.jpg" alt="Sedona">
+						<h3 class="store-card__title">Sedona</h3>
+						<p class="store-card__description">Информационный сайт для туристов</p>
+						<a class="store-card__link button button--tomat" href="#">9 900</a>
+					</li>
+					<li class="store__item">
+						<img class="store-card__picture" src="img/img-pink.jpg" alt="Pink">
+						<h3 class="store-card__title">Pink App</h3>
+						<p class="store-card__description">Продуктовый лендинг<br>
+						приложения для iOS и Android</p>
+						<a class="store-card__link button button--tomat" href="#">9 900</a>
+					</li>
+					<li class="store__item">
+						<img class="store-card__picture" src="img/img-barbershop.jpg" alt="Barbershop">
+						<h3 class="store-card__title">Barbershop</h3>
+						<p class="store-card__description">Сайт салона красоты.<br>Для мужчин, да.</p>
+						<a class="store-card__link button button--tomat" href="#">9 900</a>
+					</li>
+					<li class="store__item">
+						<img class="store-card__picture" src="img/img-mishka.jpg" alt="Mishka">
+						<h3 class="store-card__title">Mishka</h3>
+						<p class="store-card__description">Интернет-магазин<br>вязаных игрушек</p>
+						<a class="store-card__link button button--tomat" href="#">9 900</a>
+					</li>
+					<li class="store__item">
+						<img class="store-card__picture" src="img/img-aplus.jpg" alt="APlus">
+						<h3 class="store-card__title">A Plus</h3>
+						<p class="store-card__description">Лендинг курсов повышения<br>квалификации</p>
+						<a class="store-card__link button button--tomat" href="#">9 900</a>
+					</li>
+					<li class="store__item">
+						<img class="store-card__picture" src="img/img-kvast.jpg" alt="Kvast">
+						<h3 class="store-card__title">Кваст</h3>
+						<p class="store-card__description">Промо-сайт производителя<br>крафтового кваса</p>
+						<a class="store-card__link button button--tomat" href="#">9 900</a>
+					</li>	
+				</ul>
+				<nav class="store__pagination">
+					<ul class="pagination">
+						<li class="pagination__item pagination__item--current"><a class="pagination__link">1</a></li>
+						<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+						<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+						<li class="pagination__item pagination__item--next"><a class=" pagination__link" href="#">Следующая</a></li>
 					</ul>
-				</div>
-				<input class="filter__submit button button--grey" type="submit" value="Показать">
-			</form>
-		</aside>
-		<section class="catalog__store store">
-			<h2 class="common--hidden">Шаблоны</h2>
-			<div class="store__sorting sorting">
-				<h3 class="sorting__title">Сортировать: </h3>
-				<ul class="sorting__list">
-					<li class="sorting__item sorting__item--current"><a>По цене</a></li>
-					<li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
-					<li class="sorting__item"><a class="sorting__link" href="#">По названию</a></li>
-				</ul>
-				<ul class="sorting__orderby orderby">
-					<li class="orderby__item orderby__item--current">
-						<a>
-							<span class="common--hidden">По убыванию</span>
-							<svg class="orderby__icon orderby__icon--descending" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
-						</a>
-					</li>
-					<li class="orderby__item">
-						<a class="orderby__link" href="#">
-							<span class="common--hidden">По возрастанию</span>
-							<svg class="orderby__icon orderby__icon--ascending" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<ul class="store__list">
-				<li class="store__item store-card">
-					<img class="store-card__picture" src="img/img-sedona.jpg" alt="Sedona">
-					<h3 class="store-card__title">Sedona</h3>
-					<p class="store-card__description">Информационный сайт для туристов</p>
-					<a class="store-card__link button button--tomat" href="#">9 900</a>
-				</li>
-				<li class="store__item">
-					<img class="store-card__picture" src="img/img-pink.jpg" alt="Pink">
-					<h3 class="store-card__title">Pink App</h3>
-					<p class="store-card__description">Продуктовый лендинг<br>
-					приложения для iOS и Android</p>
-					<a class="store-card__link button button--tomat" href="#">9 900</a>
-				</li>
-				<li class="store__item">
-					<img class="store-card__picture" src="img/img-barbershop.jpg" alt="Barbershop">
-					<h3 class="store-card__title">Barbershop</h3>
-					<p class="store-card__description">Сайт салона красоты.<br>Для мужчин, да.</p>
-					<a class="store-card__link button button--tomat" href="#">9 900</a>
-				</li>
-				<li class="store__item">
-					<img class="store-card__picture" src="img/img-mishka.jpg" alt="Mishka">
-					<h3 class="store-card__title">Mishka</h3>
-					<p class="store-card__description">Интернет-магазин<br>вязаных игрушек</p>
-					<a class="store-card__link button button--tomat" href="#">9 900</a>
-				</li>
-				<li class="store__item">
-					<img class="store-card__picture" src="img/img-aplus.jpg" alt="APlus">
-					<h3 class="store-card__title">A Plus</h3>
-					<p class="store-card__description">Лендинг курсов повышения<br>квалификации</p>
-					<a class="store-card__link button button--tomat" href="#">9 900</a>
-				</li>
-				<li class="store__item">
-					<img class="store-card__picture" src="img/img-kvast.jpg" alt="Kvast">
-					<h3 class="store-card__title">Кваст</h3>
-					<p class="store-card__description">Промо-сайт производителя<br>крафтового кваса</p>
-					<a class="store-card__link button button--tomat" href="#">9 900</a>
-				</li>	
-			</ul>
-			<nav class="store__pagination">
-				<ul class="pagination">
-					<li class="pagination__item pagination__item--current"><a class="pagination__link">1</a></li>
-					<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-					<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-					<li class="pagination__item pagination__item--next"><a class=" pagination__link" href="#">Следующая</a></li>
-				</ul>
-			</nav>
-		</section>
+				</nav>
+			</section>
+		</div>
 	</main>
 
-	<section class="location">
+	<section class="location wrapper">
 		<h2 class="common--hidden">Наше местоположение</h2>
 		<div class="location__map map">
 			<!-- пока так, потом гугл подключим, а картинку перекинем в фон и фоном же добавим маркер -->
@@ -157,13 +161,14 @@
 		</div>
 		<div class="location__address-card address-card">
 			<h3 class="address-card__title">NЁRDS Design Studio</h3>
-			<p class="address-card__text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br> 
-				<span class="address-card__phone">тел. +7 (812) 275-75-75</span></p>
-				<a class="address-card__link button button--tomat" href="#">Напишите нам</a>
-			</div>
-		</section>
-		<footer class="footer">
-			<h2 class="common--hidden">Социальные сети</h2>
+			<p class="address-card__text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><span class="address-card__phone">тел. +7 (812) 275-75-75</span>
+			</p>
+			<a class="address-card__link button button--tomat" href="#">Напишите нам</a>
+		</div>
+	</section>
+	<footer class="footer wrapper">
+		<h2 class="common--hidden">Социальные сети</h2>
+		<div class="wrapper__container">
 			<div class="footer__social social">
 				<ul class="social__list">
 					<li class="social__item">
@@ -190,19 +195,20 @@
 				<h3 class="footer__title">Давайте дружить, это выгодно!</h3>
 				<p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
-		</footer>
-		<section class="write-us modal">
-			<h2 class="write-us__title">Напишите нам</h2>
-			<form class="write-us__form" action="post">
-				<label class="write-us__label" for="name">Ваше имя: </label>
-				<input class="write-us__field" id="name" type="text" placeholder="Имя Фамилия">
-				<label class="write-us__label" for="email">Ваш e-mail</label>
-				<input class="write-us__field" id="email" type="text" placeholder="email@example.com">
-				<label class="write-us__label" for="text">Текст письма</label>
-				<input class="write-us__field" id="text" type="text" placeholder="В свободной форме">
-				<input class="write-us__button button button--tomat" type="submit" value="Отправить">
-			</form>
-		</section>
-		<script src="js/scripts.js"></script>
-	</body>
-	</html>
+		</div>
+	</footer>
+	<section class="write-us modal">
+		<h2 class="write-us__title">Напишите нам</h2>
+		<form class="write-us__form" action="post">
+			<label class="write-us__label" for="name">Ваше имя: </label>
+			<input class="write-us__field" id="name" type="text" placeholder="Имя Фамилия">
+			<label class="write-us__label" for="email">Ваш e-mail</label>
+			<input class="write-us__field" id="email" type="text" placeholder="email@example.com">
+			<label class="write-us__label" for="text">Текст письма</label>
+			<input class="write-us__field" id="text" type="text" placeholder="В свободной форме">
+			<input class="write-us__button button button--tomat" type="submit" value="Отправить">
+		</form>
+	</section>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
