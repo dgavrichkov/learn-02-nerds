@@ -199,6 +199,8 @@ input[type="radio"].g--hidden{
 	color: black;
 }
 
+
+
 /* STATS */
 .stats__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
@@ -222,6 +224,24 @@ input[type="radio"].g--hidden{
 	color: #283136;
 }
 
+/* COMPANIES */
+.companies{
+
+}
+.companies__list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.companies__link{
+	opacity: 0.2;
+}
+.companies__link:hover{
+	opacity: 1;
+}
+.companies__link:active{
+	opacity: 0.1;
+}
 /* ADDRESS CARD*/
 .address-card__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
