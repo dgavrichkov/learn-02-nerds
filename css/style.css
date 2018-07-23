@@ -105,6 +105,9 @@ input[type="radio"].g--hidden{
 .navigation{
 	
 }
+.navigation__list{
+
+}
 .navigation__item{
 	font-family: 'Roboto Medium', Arial, sans-serif;
 	font-size: 16px;
@@ -409,6 +412,20 @@ input[type="radio"].g--hidden{
 	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
+
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+}
+.write-us__field:hover{
+	border-color: #b4b9bb;
+}
+.write-us__field:focus{
+	border-color: black;
+	outline: none;
+}
+.write-us__field--invalid{
+	border-color: #e74246;
+	color: #e74246;
 }
 .write-us__button{
 	border: none;
