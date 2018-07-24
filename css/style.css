@@ -37,6 +37,11 @@ input[type="radio"].g--hidden{
 	background-color: #a6a6a6;
 	text-decoration: none;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	border-radius: 3px;
 }
 .button:active{
 	color: rgba(255, 255, 255, 0.3); /*прозрачно-белый*/;
@@ -163,18 +168,21 @@ input[type="radio"].g--hidden{
 }
 .slider{
 	background-color: #eeeeee;
-
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+.slider__slide{
+	box-sizing: border-box;
+	padding: 0 20px;
+}
 .slide{
 	min-height: 430px;
-	background-position: 100% 100%;
+	background-position: 88% 100%;
 	display: flex;
 	justify-content: flex-start;
-	-ms-align-items: center;
-	align-items: center;
+	align-items: flex-start;
+	padding-top: 85px;
 }
 .slide:nth-of-type(1){
 	background-image: url('../img/slide1.png');
@@ -199,6 +207,10 @@ input[type="radio"].g--hidden{
 	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+	margin: 28px 0 40px;
+}
+.slide__more{
+	width: 240px;
 }
 /*Main Content*/
 .content{
@@ -238,7 +250,7 @@ input[type="radio"].g--hidden{
 	
 }
 .about-us__container{
-	padding: 80px 20px;
+	padding: 80px 0px;
 	box-shadow: 0 1px 0 0 #cccccc;
 	display: flex;
 	justify-content: space-between;	
