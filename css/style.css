@@ -551,21 +551,42 @@ input[type="radio"].g--hidden{
 	line-height: 18px;
 	color: #666666;
 }
+.store__pagination{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
 .pagination{
 	font-family: 'Roboto Medium', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 16px;
 	color: black;
 	text-transform: uppercase;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
 }
-.pagination__item--current{
-	background-color: #fff;
-	box-shadow: 0 0 0 2px #dbdbdb;
+.pagination__item{
+	margin-right: 10px;
 }
-.pagination__link{
+.pagination__button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	min-width: 50px;
+	height: 50px;
 	text-decoration: none;
+	color: black;
 	background-color: #eeeeee;
-	color: inherit;
+	border-radius: 3px;
+}
+.pagination__link--next{
+	min-width: 260px;
+}
+.pagination__link--current{
+	background-color: #ffffff;
+	box-shadow: inset 0 0 0 3px #dbdbdb;
 }
 .pagination__link:hover{
 	background-color: #dfdfdf;
@@ -573,7 +594,7 @@ input[type="radio"].g--hidden{
 .pagination__link:active{
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
-	box-shadow: 0 -3px 0 0 #d7dcde;
+	box-shadow: 0 -5px 0 0 #d7dcde;
 }
 /* Write-us */
 .write-us{
