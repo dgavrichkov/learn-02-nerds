@@ -81,7 +81,6 @@ input[type="radio"].g--hidden{
 	max-width: 1200px;
 	padding: 0;
 	margin: 0 auto;
-	/*display: flex;*/
 }
 .header{
 	background-color: #eeeeee;
@@ -305,22 +304,51 @@ input[type="radio"].g--hidden{
 .companies__link:active{
 	opacity: 0.1;
 }
-/*   */
+/* MAP  */
 .location__map{
 	max-width: 1400px;
+	min-height: 415px;
 	margin: 0 auto;
 }
+.location__container{
+	box-sizing: border-box;
+	max-width: 1200px;
+	/*padding: 50px 20px;*/
+	padding: 0 20px;
+	display: flex;
+	justify-content: flex-start;
+	-ms-align-items: center;
+	align-items: center;
+	min-height: inherit;
+}
+.map{
+	background-image: url('../img/map.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 /* ADDRESS CARD*/
+
+.address-card{
+	background-color: #ffffff;
+	box-sizing: border-box;
+	padding: 55px 50px 50px;
+	max-width: 320px;
+	min-height: 310px;
+}
 .address-card__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 18px;
+	margin: 0;
 }
 .address-card__text{
 	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
+	margin: 0;
 }
+
+
 
 /* FOOTER */
 .footer__container{
