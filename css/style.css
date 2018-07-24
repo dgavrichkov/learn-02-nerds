@@ -88,8 +88,10 @@ input[type="radio"].g--hidden{
 .header__container{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	min-height: 120px;
+	/*temp*/
+	/*box-shadow: inset 0 0 0 1px #bbbbbb;*/
 }
 .header__logo{
 	padding-left: 20px;
@@ -97,11 +99,13 @@ input[type="radio"].g--hidden{
 }
 .header__cart{
 	padding-right: 20px;
+	padding-bottom: 20px;
 	width: 200px;
 	text-align: right;
 }
 .header__navigation{
 	width: 700px;
+	padding-bottom: 20px;
 }
 .logo__img{
 
@@ -428,16 +432,33 @@ input[type="radio"].g--hidden{
 	color: black;
 
 	background-color: #eeeeee;
-	padding: 0;
+	padding: 76px 0 100px;
 	margin: 0;
 	text-align: center;
 }
-
+.catalog__container{
+	box-sizing: border-box;
+	display: flex;
+	/*padding: 0 20px;*/
+}
+.catalog__filter{
+	box-sizing: border-box;
+	min-width: 300px;
+	padding: 60px 20px;
+}
+.catalog__store{
+	max-width: 800px;
+	margin-left: 100px;
+	padding: 60px 20px 0;
+}
 .filter__title, .sorting__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	color: black;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
 }
 .options{
 	font-family: 'Roboto Regular', Arial, sans-serif;
@@ -462,10 +483,18 @@ input[type="radio"].g--hidden{
 	box-shadow: 0 -3px 0 0 #bfbfbf;
 }
 
+.sorting{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 60px;
+}
+
 .sorting__list, .sorting__orderby{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+	display: flex;
 }
 .sorting__item{
 	font-family: 'Roboto Regular', Arial, sans-serif;
@@ -504,6 +533,10 @@ input[type="radio"].g--hidden{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .store-card__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
