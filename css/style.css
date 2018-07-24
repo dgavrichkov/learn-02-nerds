@@ -323,15 +323,38 @@ input[type="radio"].g--hidden{
 }
 
 /* FOOTER */
+.footer__container{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 20px;
+	min-height: 220px;
+}
 .footer__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 36px;
 	line-height: 36px;
+
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
 }
 .footer__text{
 	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
+
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+}
+.footer__social{
+	min-width: 300px;
+}
+.footer__content{
+	min-width: 900px;
+	padding-left: 100px;
 }
 .social__list{
 	list-style: none;
@@ -339,6 +362,9 @@ input[type="radio"].g--hidden{
 	padding: 0;
 
 	display: flex;
+}
+.social__item:not(:last-child){
+	margin-right: 10px;
 }
 .social__link{
 	display: block;
