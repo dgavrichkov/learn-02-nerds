@@ -177,12 +177,18 @@
 	<section class="write-us modal">
 		<h2 class="write-us__title">Напишите нам</h2>
 		<form class="write-us__form" action="post">
-			<label class="write-us__label" for="name">Ваше имя: </label>
-			<input class="write-us__field" id="name" type="text" placeholder="Имя Фамилия">
-			<label class="write-us__label" for="email">Ваш e-mail</label>
-			<input class="write-us__field" id="email" type="text" placeholder="email@example.com">
-			<label class="write-us__label" for="text">Текст письма</label>
-			<input class="write-us__field" id="text" type="text" placeholder="В свободной форме">
+			<div>
+				<label class="write-us__label" for="name">Ваше имя: </label>
+				<input class="write-us__field" id="name" type="text" placeholder="Имя Фамилия">
+			</div>
+			<div>
+				<label class="write-us__label" for="email">Ваш e-mail:</label>
+				<input class="write-us__field" id="email" type="text" placeholder="email@example.com">
+			</div>
+			<div>
+				<label class="write-us__label" for="text">Текст письма:</label>
+				<input class="write-us__field write-us__field--area" id="text" type="text" placeholder="В свободной форме">
+			</div>
 			<input class="write-us__button button button--tomat" type="submit" value="Отправить">
 		</form>
 	</section>
