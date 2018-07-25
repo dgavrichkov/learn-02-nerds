@@ -273,32 +273,79 @@ input[type="radio"].g--hidden{
 	justify-content: space-between;	
 }
 .about-us__content{
-	
+	margin: 0;
 }
 .about-us__title{
 	font-family: 'Roboto Medium', Arial, sans-serif;
 	font-size: 45px;
 	line-height: 45px;
 	color: black;
+	margin: 0;
 }
 .about-us__text{
 	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
+	margin: 0;
+	margin-top: 37px;
 }
 .about-us__text--accent{
 	font-family: 'Roboto Bold', Arial, sans-serif;
 	text-transform: uppercase;
 	color: black;
+	margin-top: 48px;
+}
+.about-us__services{
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	color: #283136;
+	margin: 0;
+	padding: 0;
+	margin-top: 36px;
+	
+	list-style: none;
+}
+.about-us__service{
+	position: relative;
+	padding-left: 36px;
+}
+.about-us__service:not(:last-child){
+	margin-bottom: 36px;
+}
+.about-us__service::before{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	background-color: #eb5862;
+	left: 0;
+    top: 50%;
+    margin-top: -1px;
+}
+.about-us__stats{
+	margin-top: -20px;
 }
 
 /* STATS */
+.stats{
+	min-height: 410px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
 .stats__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
+	margin: 0;
+	margin-top: 40px;
+}
+.stats__table{
+	margin: 0;
+	margin-top: auto;
 }
 .stats__percent{
 	font-family: 'Roboto Bold', Arial, sans-serif;
