@@ -694,6 +694,13 @@ input[type="radio"].g--hidden{
 /***************************/
 .store-card{
 	position: relative;
+	width: 360px;
+	background-color: #e9e9e9;
+	border-radius: 5px 5px 0 0;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
+	align-items: center;
 }
 .store-card__overcard{
 	position: absolute;
@@ -710,10 +717,21 @@ input[type="radio"].g--hidden{
 	padding-top: 35px;
 	padding-bottom: 40px;
 	opacity: 0;
-	transition: opacity 30ms;
+	transition: opacity 100ms;
 }
-.store-card:hover .store-card__overcard{
+
+.store-card__browser{
+	margin-bottom: -5px;
+	z-index: 2;
+	opacity: 0.05;
+	transition: opacity 100ms;
+}
+.store-card:hover .store-card__overcard
+{
 	opacity: 1;
+}
+.store-card:hover .store-card__browser{
+	opacity: 0.8;
 }
 .store-card__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
@@ -723,6 +741,11 @@ input[type="radio"].g--hidden{
 	text-transform: uppercase;
 	margin: 0;
 	margin-bottom: 25px;
+}
+.store-card__picture{
+	display: block;
+	width: 358px;
+	height: 575px;
 }
 .store-card__description{
 	font-family: 'Roboto Regular', Arial, sans-serif;
