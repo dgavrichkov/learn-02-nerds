@@ -412,9 +412,15 @@ input[type="radio"].g--hidden{
 	min-height: inherit;
 }
 .map{
-	background-image: url('../img/map.jpg');
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-image: 
+		url('../img/map-marker.png'),
+		url('../img/map.jpg');
+	background-repeat: 
+		no-repeat,
+		no-repeat;
+	background-position: 
+		70% 45%,
+		0 0;
 }
 /* ADDRESS CARD*/
 
@@ -424,18 +430,28 @@ input[type="radio"].g--hidden{
 	padding: 55px 50px 50px;
 	max-width: 320px;
 	min-height: 310px;
+	display: flex;
+	flex-direction: column;
 }
 .address-card__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	margin: 0;
+	margin-bottom: 30px;
 }
 .address-card__text{
 	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	margin: 0;
+}
+.address-card__phone{
+	display: block;
+	margin-top: 21px;
+}
+.address-card__link{
+	margin-top: auto;
 }
 
 
