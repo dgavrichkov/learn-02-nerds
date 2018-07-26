@@ -144,7 +144,17 @@ input[type="radio"].g--hidden{
 	margin-right: 46px;
 }
 .navigation__item--current{
-	border-bottom: 2px solid #fb565a;
+	position: relative;
+}
+.navigation__item--current::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: red;
+	bottom: -15px;
+	left: 0;
+
 }
 .navigation__link,
 .cart__link{
