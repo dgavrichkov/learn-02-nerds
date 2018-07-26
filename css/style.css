@@ -177,6 +177,23 @@ input[type="radio"].g--hidden{
 	text-transform: uppercase;
 	color: black;
 }
+.cart__link{
+	position: relative;
+	padding-left: 40px;
+}
+.cart__link::before{
+	content: '';
+	position: absolute;
+	background-image: url('../img/cart-icon.svg');
+	background-repeat: no-repeat;
+	-webkit-background-size: 15px;
+	background-size: 15px;
+	width: 15px;
+	height: 16px;
+	top: 50%;
+	left: 0;
+	margin-top: -9px;
+}
 .cart--current{
 	border-bottom: 2px solid #fb565a;
 }
