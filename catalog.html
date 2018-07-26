@@ -223,20 +223,30 @@
 	<section class="write-us modal">
 		<h2 class="write-us__title">Напишите нам</h2>
 		<form class="write-us__form" action="post">
-			<div>
-				<label class="write-us__label" for="name">Ваше имя: </label>
-				<input class="write-us__field" id="name" type="text" placeholder="Имя Фамилия">
+			<div class="write-us__row">
+				<div class="write-us__point">
+					<label class="write-us__label" for="name">Ваше имя: </label>
+					<input class="write-us__field" id="name" type="text" placeholder="Имя Фамилия">
+				</div>
+				<div class="write-us__point">
+					<label class="write-us__label" for="email">Ваш e-mail:</label>
+					<input class="write-us__field" id="email" type="text" placeholder="email@example.com">
+				</div>
 			</div>
-			<div>
-				<label class="write-us__label" for="email">Ваш e-mail:</label>
-				<input class="write-us__field" id="email" type="text" placeholder="email@example.com">
+			<div class="write-us__row">
+				<div class="write-us__point">
+					<label class="write-us__label" for="text">Текст письма:</label>
+					<textarea class="write-us__field write-us__field--area" id="text" type="text" placeholder="В свободной форме"></textarea>
+				</div>
 			</div>
-			<div>
-				<label class="write-us__label" for="text">Текст письма:</label>
-				<input class="write-us__field write-us__field--area" id="text" type="text" placeholder="В свободной форме">
+			<div class="write-us__row">
+				<input class="write-us__button button button--tomat" type="submit" value="Отправить">
 			</div>
-			<input class="write-us__button button button--tomat" type="submit" value="Отправить">
 		</form>
+		<button class="modal__close" type="button">
+			<span class="common--hidden">Закрыть</span>
+			<svg class="modal__close-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+		</button>
 	</section>
 	<script src="js/scripts.js"></script>
 </body>
