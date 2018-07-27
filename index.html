@@ -25,29 +25,36 @@
 			</div>
 		</div>
 	</header>
-	<ul class="slider content__slider">
-		<li class="slider__slide slide wrapper__container">
-			<div class="slide__content">
-				<h3 class="slide__title">Долго, дорого,<br>скрупулезно.</h3>
-				<p class="slide__description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-				<a href="#" class="slide__more button button--tomat">Узнать больше</a>
-			</div>
-		</li>
-		<li class="slider__slide slide wrapper__container">
-			<div class="slide__content">
-				<h3 class="slide__title">Любим математику<br>как никто другой</h3>
-				<p class="slide__description">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-				<a href="#" class="slide__more button button--tomat">Узнать больше</a>
-			</div>
-		</li>
-		<li class="slider__slide slide wrapper__container">
-			<div class="slide__content">
-				<h3 class="slide__title">Только ночь,<br>только хардкор</h3>
-				<p class="slide__description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-				<a href="#" class="slide__more button button--tomat">Узнать больше</a>
-			</div>
-		</li>
-	</ul>
+	<section class="slider wrapper">
+		<ul class="slider__list slider__container wrapper__container">
+			<li class="slider__slide slide slide--on">
+				<div class="slide__content">
+					<h3 class="slide__title">Долго, дорого,<br>скрупулезно.</h3>
+					<p class="slide__description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+					<a href="#" class="slide__more button button--tomat">Узнать больше</a>
+				</div>
+			</li>
+			<li class="slider__slide slide">
+				<div class="slide__content">
+					<h3 class="slide__title">Любим математику<br>как никто другой</h3>
+					<p class="slide__description">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+					<a href="#" class="slide__more button button--tomat">Узнать больше</a>
+				</div>
+			</li>
+			<li class="slider__slide slide">
+				<div class="slide__content">
+					<h3 class="slide__title">Только ночь,<br>только хардкор</h3>
+					<p class="slide__description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+					<a href="#" class="slide__more button button--tomat">Узнать больше</a>
+				</div>
+			</li>
+		</ul>
+		<div class="slider__controls">
+			<button class="slider__control slider__control--current" type="button" onclick="currentSlide(1)"><span class="common--hidden">1</span></button>
+			<button class="slider__control" type="button" onclick="currentSlide(2)"><span class="common--hidden">2</span></button>
+			<button class="slider__control" type="button" onclick="currentSlide(3)"><span class="common--hidden">3</span></button>
+		</div>
+	</section>
 	<main class="content wrapper">
 		<section class="services content__container wrapper__container">
 			<h2 class="common--hidden">Наши услуги</h2>
