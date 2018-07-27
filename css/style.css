@@ -607,18 +607,26 @@ input[type="radio"].common--hidden{
 	left: -40px;
 	top: 50%;
 	margin-top: -14px;
-	width: 25px;
+	width: 27px;
 	height: 25px;
-	-webkit-background-size: 25px;
-	background-size: 25px;
 	background-repeat: no-repeat;
 
 }
 .options__label--radio::before{
 	background-image: url('../img/radio-off.svg');
+	background-size: 25px;
 }
 .options__label--check::before{
-	background-image: url('../img/checkbox-off.svg')
+	background-image: url('../img/checkbox-off.svg');
+	background-size: 23px;
+}
+.options__input:checked + .options__label--radio::before{
+	background-image: url('../img/radio-on.svg');
+	background-size: 25px;
+}
+.options__input:checked + .options__label--check::before{
+	background-image: url('../img/checkbox-on.svg');
+	background-size: 27px 23px;
 }
 .filter__title--price{
 	padding-bottom: 60px;
