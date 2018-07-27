@@ -904,6 +904,7 @@ input[type="radio"].common--hidden{
 /* Write-us */
 .write-us{
 	box-sizing: border-box;
+	background-color: #ffffff;
 	max-width: 960px;
 	min-height: 590px;
 	padding: 70px 100px 80px 100px;
@@ -980,9 +981,12 @@ input[type="radio"].common--hidden{
 
 /* temp */
 .modal{
-	margin: 0 auto;
-	margin-bottom: 210px;
-	position: relative;
+	position: fixed;
+	z-index: 2;
+	top: 50px;
+	left: 50%;
+	margin-left: -480px;
+	display: none;
 }
 .modal__close{
 	position: absolute;
@@ -1000,4 +1004,7 @@ input[type="radio"].common--hidden{
 }
 .modal__close:active .modal__close-icon{
 	fill: rgba(251, 86, 90, 0.1);	
+}
+.modal--on{
+	display: block;
 }
