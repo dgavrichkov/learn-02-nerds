@@ -223,7 +223,7 @@ input[type="radio"].common--hidden{
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding-top: 85px;
+	padding-top: 70px;
 }
 .slide--on{
 	visibility: visible;
@@ -261,7 +261,7 @@ input[type="radio"].common--hidden{
 	position: absolute;
 	left: 50%;
 	margin-left: -46px;
-	bottom: 78px;
+	bottom: 98px;
 }
 .slider__control{
 	border: none;
@@ -273,7 +273,7 @@ input[type="radio"].common--hidden{
 	cursor: pointer;
 }
 .slider__control:not(:last-child){
-	margin-right: 15px;
+	margin-right: 12px;
 }
 .slider__control--current::before{
 	content: '';
@@ -301,16 +301,19 @@ input[type="radio"].common--hidden{
 }
 .services__list{
 	margin: 0;
-	padding: 80px 0;
+	padding: 76px 0;
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	box-shadow: 0 1px 0 0 #cccccc;
 }
 .services__item{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+.services__item:not(:last-child){
+	margin-right: 100px;
 }
 .service__title{
 	font-family: 'Roboto Bold', Arial, sans-serif;
@@ -319,18 +322,18 @@ input[type="radio"].common--hidden{
 	color: black;
 	text-transform: uppercase;
 	margin: 0;
-	margin-top: 32px;
+	margin-top: 28px;
 }
 .service__description{
 	font-family: 'Roboto Regular', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	margin: 0;
-	margin-top: 28px;
+	margin-top: 20px;
 }
 .service__link{
 	width: 160px;
-	margin-top: 36px;
+	margin-top: 30px;
 }
 /******************/
 .about-us__container{
@@ -355,13 +358,13 @@ input[type="radio"].common--hidden{
 	line-height: 24px;
 	color: #283136;
 	margin: 0;
-	margin-top: 37px;
+	margin-top: 34px;
 }
 .about-us__text--accent{
 	font-family: 'Roboto Bold', Arial, sans-serif;
 	text-transform: uppercase;
 	color: black;
-	margin-top: 48px;
+	margin-top: 37px;
 }
 .about-us__services{
 	font-family: 'Roboto Regular', Arial, sans-serif;
@@ -370,7 +373,7 @@ input[type="radio"].common--hidden{
 	color: #283136;
 	margin: 0;
 	padding: 0;
-	margin-top: 36px;
+	margin-top: 26px;
 	
 	list-style: none;
 }
@@ -392,7 +395,7 @@ input[type="radio"].common--hidden{
     margin-top: -1px;
 }
 .about-us__stats{
-	margin-top: -20px;
+	margin-top: -34px;
 }
 
 /* STATS */
@@ -429,7 +432,9 @@ input[type="radio"].common--hidden{
 	line-height: 18px;
 	color: #283136;
 }
-
+.stats__row td{
+	padding-top: 18px;
+}
 /* COMPANIES */
 .companies{
 	margin-bottom: 80px;

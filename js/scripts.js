@@ -9,6 +9,8 @@ trigger.addEventListener('click', function(evt){
 
 closer.addEventListener('click', function(){
 	modal.classList.remove('modal--on');
+	document.querySelector('#name').classList.remove('write-us__field--invalid');
+	document.querySelector('#email').classList.remove('write-us__field--invalid');
 });
 
 // slider
@@ -39,3 +41,15 @@ function showSlides(n){
 	dots[slideIndex-1].classList.add('slider__control--current');
 
 }
+
+//попробую в валидацию
+var form = document.querySelector('.write-us__form');
+form.addEventListener('submit', function(evt){
+	if(!document.querySelector('#name').value || !document.querySelector('#email').value){
+		evt.preventDefault();
+		console.log('Заполните все поля!');
+		document.querySelector('#name').classList.add('write-us__field--invalid');
+		document.querySelector('#email').classList.add('write-us__field--invalid');
+	};
+
+});
